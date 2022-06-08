@@ -11,14 +11,14 @@
 
 <style>
   .comment {
-    color: hsl(211, 10%, 45%);
+    color: rgb(103, 114, 126);
     font-size: 1.5rem;
     line-height: 1.5;
     grid-area: text;
   }
   .comment strong {
     font-weight: 500;
-    color: hsl(238, 40%, 52%);
+    color: rgb(84, 87, 182);
   }
 
   @media screen and (min-width: 768px) {

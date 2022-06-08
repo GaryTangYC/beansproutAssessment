@@ -12,7 +12,7 @@
     grid-area: image;
   }
   .size-default {
-    width: 35px;
-    height: 35px;
+    width: 75px;
+    height: 75px;
   }
 </style>

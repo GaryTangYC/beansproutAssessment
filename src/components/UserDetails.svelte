@@ -7,7 +7,19 @@
 </script>
 
 <div class="user-details">
-<Photo src={user.image.png} />
+<!-- Component 1: Photo -->
+  <Photo src={user.image.png} />
+<!-- Component 2: Comment Poster Name -->
+ {#if user.username === currentUser.username}
+    <!-- Add a 'you' tag if its the current user -->
+    <p class="userName">
+      <strong>{user.username}</strong> <span class="tag">you</span>
+    </p>
+  {:else}
+    <p class="userName"><strong>{user.username}</strong></p>
+  {/if}
+
+<!-- Component 3: datePost -->
 <p class="datePost">{datePost}</p>
 
 </div>
@@ -19,27 +31,25 @@
     grid-area: user-info;
   }
 
-  .username {
-    margin-inline: 0.5em 1.2em;
+  .userName {
+    margin-inline: 1em 1em;
     font-size: 1.5rem;
-    font-weight: 500;
-    display: flex;
+    color: rgb(54, 66, 81);
+    /* display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 0.25em;
-    color: hsl(212, 24%, 26%);
+    align-items: center; */
   }
   .tag {
     display: inline-block;
-    background-color: hsl(238, 40%, 52%);
-    color: hsl(0, 0%, 100%);
+    background-color: rgb(84, 87, 182);
+    color: rgb(255, 255, 255);
     font-weight: 500;
     font-size: 1.25rem;
     padding: 0.1em 0.3em;
     border-radius: 2px;
   }
   .datePost {
-    color: hsl(211, 10%, 45%);
+    color: rgb(54,66,81);
     font-size: 1.5rem;
   }
 
