@@ -15,15 +15,14 @@
         font-weight: 500;
     }
 
-    img {
+    /* img {
         width: 20px;
         height: 20px;
         display: inline-block;
         position: relative;
         text-align: center;
         margin-right: 10px;
-    }
-
+    } */
     .icon-name {
         display: inline-block;
         position: relative;
@@ -35,6 +34,5 @@
 </style>
 
 <button class="action-button" on:click>
-    <img src="../../images/icon-edit.svg" />
-    <span class="icon-name"><strong>Edit</strong></span>
+    <span class="icon-name"><strong>Send</strong></span>
 </button>
